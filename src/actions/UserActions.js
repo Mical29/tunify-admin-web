@@ -3,6 +3,19 @@ import tunifyAPI from '../apis/tunifyAPI'
 import {ActionTypes} from './types';
 import { getUserCookie } from '../cookies/cookie';
 
+
+export const activeUsers = () => async (dispatch) =>{
+  const response = await tunifyAPI.get("/customadmin/api/users/").then(res =>{
+    dispatch({type: ActionTypes.GET_ACTIVE_USERS,
+      payload : res.data})
+  })
+  .catch(err =>{
+  //   dispatch(returnErrors(err.response,err.response.status));
+  console.log(err)
+
+  })
+}
+
 export const login = (data) => async (dispatch) => {
     const response = await tunifyAPI.post("/accounts/api/auth/login",data).then(
       res => {

@@ -118,7 +118,7 @@ const WidgetsDropdown = (props) => {
         <CWidgetDropdown
           color="gradient-warning"
           header="9.823"
-          text="Montly Listen Count"
+          text="Total Users"
           footerSlot={
             <ChartLineSimple
               className="mt-3"
@@ -148,6 +148,70 @@ const WidgetsDropdown = (props) => {
 
       <CCol sm="6" lg="4">
         <CWidgetDropdown
+          color="gradient-warning"
+          header="9.823"
+          text="Total Artists"
+          footerSlot={
+            <ChartLineSimple
+              className="mt-3"
+              style={{height: '70px'}}
+              backgroundColor="rgba(255,255,255,.2)"
+              dataPoints={[78, 81, 80, 45, 34, 12, 40]}
+              options={{ elements: { line: { borderWidth: 2.5 }}}}
+              pointHoverBackgroundColor="warning"
+              label="Members"
+              labels="months"
+            />
+          }
+        >
+          {/* <CDropdown>
+            <CDropdownToggle color="transparent">
+              <CIcon name="cil-settings"/>
+            </CDropdownToggle>
+            <CDropdownMenu className="pt-0" placement="bottom-end">
+              <CDropdownItem>Action</CDropdownItem>
+              <CDropdownItem>Another action</CDropdownItem>
+              <CDropdownItem>Something else here...</CDropdownItem>
+              <CDropdownItem disabled>Disabled action</CDropdownItem>
+            </CDropdownMenu>
+          </CDropdown> */}
+        </CWidgetDropdown>
+      </CCol>
+
+      <CCol sm="6" lg="4">
+        <CWidgetDropdown
+          color="gradient-warning"
+          header="9.823"
+          text="Total Staffs"
+          footerSlot={
+            <ChartLineSimple
+              className="mt-3"
+              style={{height: '70px'}}
+              backgroundColor="rgba(255,255,255,.2)"
+              dataPoints={[78, 81, 80, 45, 34, 12, 40]}
+              options={{ elements: { line: { borderWidth: 2.5 }}}}
+              pointHoverBackgroundColor="warning"
+              label="Members"
+              labels="months"
+            />
+          }
+        >
+          {/* <CDropdown>
+            <CDropdownToggle color="transparent">
+              <CIcon name="cil-settings"/>
+            </CDropdownToggle>
+            <CDropdownMenu className="pt-0" placement="bottom-end">
+              <CDropdownItem>Action</CDropdownItem>
+              <CDropdownItem>Another action</CDropdownItem>
+              <CDropdownItem>Something else here...</CDropdownItem>
+              <CDropdownItem disabled>Disabled action</CDropdownItem>
+            </CDropdownMenu>
+          </CDropdown> */}
+        </CWidgetDropdown>
+      </CCol>
+
+      {/* <CCol sm="6" lg="4">
+        <CWidgetDropdown
           color="gradient-danger"
           header={followerCount}
           text="Followers"
@@ -162,23 +226,13 @@ const WidgetsDropdown = (props) => {
             />
           }
         >
-          {/* <CDropdown>
-            <CDropdownToggle caret className="text-white" color="transparent">
-              <CIcon name="cil-settings"/>
-            </CDropdownToggle>
-            <CDropdownMenu className="pt-0" placement="bottom-end">
-              <CDropdownItem>Action</CDropdownItem>
-              <CDropdownItem>Another action</CDropdownItem>
-              <CDropdownItem>Something else here...</CDropdownItem>
-              <CDropdownItem disabled>Disabled action</CDropdownItem>
-            </CDropdownMenu>
-          </CDropdown> */}
+          
         </CWidgetDropdown>
-      </CCol>
+      </CCol> */}
 
 
 
-      <CCol sm="6" lg="4">
+      {/* <CCol sm="6" lg="4">
         <CWidgetDropdown
           color="gradient-danger"
           header={totalStreamingCount}
@@ -195,19 +249,9 @@ const WidgetsDropdown = (props) => {
             />
           }
         >
-          {/* <CDropdown>
-            <CDropdownToggle caret className="text-white" color="transparent">
-              <CIcon name="cil-settings"/>
-            </CDropdownToggle>
-            <CDropdownMenu className="pt-0" placement="bottom-end">
-              <CDropdownItem>Action</CDropdownItem>
-              <CDropdownItem>Another action</CDropdownItem>
-              <CDropdownItem>Something else here...</CDropdownItem>
-              <CDropdownItem disabled>Disabled action</CDropdownItem>
-            </CDropdownMenu>
-          </CDropdown> */}
+          
         </CWidgetDropdown>
-      </CCol>
+      </CCol> */}
 
 
 

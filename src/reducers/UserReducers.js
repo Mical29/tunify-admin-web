@@ -9,6 +9,21 @@ const initialState = {
     
 }
 
+const activeusersState={
+    activeUsers : []
+}
+export const activeUserReducer = (state = activeusersState,{type,payload}) => {
+    switch (type){
+        case ActionTypes.GET_ACTIVE_USERS:
+            return{
+                ...state,
+                activeUsers : payload
+            }
+        default:
+            return state;
+    }
+}
+
 export const userReducer = (state = initialState, {type, payload}) => {
     
     switch (type){

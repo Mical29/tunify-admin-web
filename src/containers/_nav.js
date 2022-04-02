@@ -13,24 +13,36 @@ const _nav =  [
     }
   },
   {
-    _tag: 'CSidebarNavItem',
-    name: 'Upload Tracks',
-    to: '/uploadtrack',
-    icon: <CIcon name="cil-arrow-circle-top" customClasses="c-sidebar-nav-icon text-secondary"/>,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    }
+    _tag: 'CSidebarNavTitle',
+    _children: ['Artists']
   },
+  // {
+  //   _tag: 'CSidebarNavItem',
+  //   name: 'Upload Tracks',
+  //   to: '/uploadtrack',
+  //   icon: <CIcon name="cil-arrow-circle-top" customClasses="c-sidebar-nav-icon text-secondary"/>,
+  //   badge: {
+  //     color: 'info',
+  //     text: 'NEW',
+  //   }
+  // },
   {
     _tag: 'CSidebarNavItem',
     name: 'Manage Tracks',
     to: '/managetracks',
     icon: <CIcon name="cil-music-note" customClasses="c-sidebar-nav-icon "/>,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    }
+    
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Pending Tracks',
+    to: '/pendingtracks',
+    icon: <CIcon name="cil-music-note" customClasses="c-sidebar-nav-icon "/>,
+    
+  },
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['Users']
   },
   {
     _tag: 'CSidebarNavItem',
@@ -42,6 +54,7 @@ const _nav =  [
       text: 'NEW',
     }
   },
+
   {
     _tag: 'CSidebarNavItem',
     name: 'Report',
@@ -64,7 +77,24 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavTitle',
-    _children: ['Theme']
+    _children: ['Staffs']
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Manage Staffs',
+    to: '/managestaffs',
+    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+    badge: {
+      color: 'info',
+      text: 'NEW',
+    }
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Roles and Permissions',
+    to: '/rolesandpermissions',
+    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+    
   },
   {
     _tag: 'CSidebarNavItem',
@@ -80,7 +110,7 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavTitle',
-    _children: ['Components']
+    _children: ['Anatylics']
   },
   {
     _tag: 'CSidebarNavDropdown',

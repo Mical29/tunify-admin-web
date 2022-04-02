@@ -29,8 +29,10 @@ const Charts = React.lazy(() => import('./views/charts/Charts'));
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
 const UploadTrack = React.lazy(() => import('./views/dashboard/UploadTrack'));
 const ManageTracks = React.lazy(() => import('./views/dashboard/ManageTrack'));
-const ManageUsers = React.lazy(() => import('./views/dashboard/ManageMusicsDashboard'));
-
+const PendingTracks = React.lazy(() => import('./views/dashboard/PendingTracks'));
+const ManageUsers = React.lazy(() => import('./views/dashboard/ManageUsers/ManageUsers'));
+const ManageStaffs = React.lazy(() => import('./views/dashboard/ManageStaffs/ManageStaffs'));
+const RoleAndPermissions = React.lazy(() => import('./views/dashboard/RolesAndPermissions/RolesAndPermissions'));
 
 const CoreUIIcons = React.lazy(() => import('./views/icons/coreui-icons/CoreUIIcons'));
 const Flags = React.lazy(() => import('./views/icons/flags/Flags'));
@@ -48,11 +50,15 @@ const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/uploadtrack', name: 'Upload Tracks', component: UploadTrack },
-  { path: '/managetracks', name: 'Manage Users', component: ManageTracks },
+  { path: '/managetracks', name: 'Pending Tracks', component: ManageTracks },
+  { path: '/pendingtracks', name: 'Pending Tracks', component: PendingTracks },
+  { path: '/manageusers', name: 'Manage Users', component: ManageUsers },
+  { path: '/managestaffs', name: 'Manage Staffs', component: ManageStaffs },
+  { path: '/rolesandpermissions', name: 'Manage Staffs', component: RoleAndPermissions },
   
   // { path: '/managemusics', name: 'Manage Musics', component: ManageMusics },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
-  { path: '/theme/colors', name: 'Colors', component: Colors },
+  { path: '/theme/colors', ntme: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
   { path: '/base', name: 'Base', component: Cards, exact: true },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
